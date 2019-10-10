@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1 class="title center">P01 - Style Guide Template</h1>
+        <p class="title center">A template you can use to start building out your own style guides with.</p>
+        <nav id="nav_one" class="center">
+            <a href="#interactive_elements">Interactive Elements</a>
+            <a href="#text_elements">Text Elements</a><br>
+            <a href="#combined_elements">Combined Elements</a>
+            <a href="product.html">Product listing</a>
+            <a href="checkout.html">Check out</a>
+        </nav>
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+        <section class="element">
+            <h2>Navigation Button</h2>
+            <h4>CSS selector:</h4>
+            <p>.nav_btn</p>
+            <h4>Sample code:</h4>
+            <code>&lt;a href="#interactive_elements" class="nav_btn"&gt;Navigation Button&lt;/a&gt;</code>
+            <h4>Rendered element:</h4>
+            <div class="nav">
+                <a class="nav_btn" href="#">Navigation Button</a>
+            </div>
+        </section>
+
+        <section class="element">
+            <h2>Default Buttom</h2>
+            <h4>CSS selector:</h4>
+            <p>.default_btn</p>
+            <h4>Sample code:</h4>
+            <div class="default">
+                <code>&lt;a href="#" class="default-but"&gt;Default Button&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <a class="default-btn" href="#">Default Button</a>
+            </div>
+        </section>
+
+
+        <section class="element">
+            <h2>In-text Link</h2>
+            <h4>CSS selector:</h4>
+            <p>.in-text</p>
+            <h4>Sample code:</h4>
+            <div class="in-text">
+                <code>&lt;a href="#" class="textlink"&gt;In-text link&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <a class="textlink" href="#"><h4> In-text link</h4> </a>
+            </div>
+        </section>
+
+
+        <!-- Default Button styling section -->
+
+        <section class="element">
+            <h2>Submit/Reset Buttons</h2>
+            <h4>CSS selector:</h4>
+            <p>.submit</p>
+            <h4>Sample code:</h4>
+            <div class="">
+                <code>&lt;a href="#" class="submit"&gt;In-text link&lt;/a&gt;</code>
+                <h4>Rendered element:</h4>
+                <a class="submit" href="#">Submit/Reset</a>
+        </section>
+
+
+        <section class="element" id="text_input">
+            <h2>Text Input Field with Label</h2>
+            <h4>CSS selector:</h4>
+            <p>.textInput</p>
+            <h4>Sample code:</h4>
+            <code>&lt;a href="#"  class="textInput"&gt;name&lt;/a&gt;</code>
+            <h4>Rendered element:</h4>
+            <div class="text-input">
+                <label>Name:</label>
+                <input type="text" name="name" class="textInput">
+            </div>
+        </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+        <section class="element">
+            <h2>Headings</h2>
+            <h4>CSS selector:</h4>
+            <p>.headings</p>
+            <h4>Sample code:</h4>
+            <code>
+                &lt;h2&gt;level one&lt;/h2&gt;<br>
+                &lt;h3&gt;level two&lt;/h3&gt;<br>
+                &lt;h4&gt;level three&lt;/h4&gt;<br>
+                &lt;h5&gt;level four&lt;/h5&gt;<br>
+            </code>
+            <h4>Rendered element:</h4>
+            <div class="headings">
+                <h2 class="one">level one</h2>
+                <h3 class="two">level two</h3>
+                <h4 class="three">level three</h4>
+                <h5 class="four">level four</h5>
+            </div>
+        </section>
+
+        <section class="element">
+            <h2>Paragraphs</h2>
+            <h4>CSS selector:</h4>
+            <p>.paragraphs</p>
+            <h4>Sample code:</h4>
+            <code>&lt;p class="paragraphs"&gt; On its website...&lt;/p&gt;</code>
+            <h4>Rendered element:</h4>
+            <p class="paragraphs"> On its website in China, Sony provides a comprehensive introduction to Sony's various businesses. It provides a wealth of product information, including digital cameras, video cameras, laptop computers, TV series, video and audio products, as well as after-sales service and purchase services</p>
+        </section>
+
+        <section class="element">
+            <h2>Numbered Lists</h2>
+            <h4>CSS selector:</h4>
+            <p>.camera_lists</p>
+            <h4>Sample code:</h4>
+            <code>
+                &lt;ol class="camera_lists"&gt;<br>
+                &lt;li&gt;A100&lt;/li&gt;<br>
+                &lt;li&gt;A200&lt;/li&gt;<br>
+                &lt;li&gt;A230&lt;/li&gt;<br>
+                &lt;/ol&gt;
+            </code>
+            <h4>Rendered element:</h4>
+            <ol class="camera_lists">
+                <li>A100</li>
+                <li>A200</li>
+                <li>A230</li>
+            </ol>
+        </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+        <section class="element">
+            <h2>Main Navigation</h2>
+            <h4>CSS selector:</h4>
+            <p>.navigation</p>
+            <h4>Sample code:</h4>
+            <code>
+                &lt;img&gt;src="images/bg.jpg" alt="chocolate picture" width=900px height=400px &lt;/p&gt;<br>
+                &lt;nav&gt;<br>
+                &lt;ol id="nav_items"&gt;<br>
+                &lt;li&gt;&lt;a&gt;HOME&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a&gt;PRODUCT&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a&gt;CHECK OUT&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a&gt;CONTACT&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;/ol&gt;<br>
+                &lt;/nav&gt;
+            </code>
+            <h4>Rendered element:</h4>
+            <div class="header">
+                <p>Camera</p>
+                <br /> <br /> <br />
+                <a href="Home.html">Home</a>
+                <a href="PRODUCT.html">PRODUCT</a>
+                <a href="CONTACT.html">CONTACT</a>
+                <a href="CHECKOUT.html">CHECKOUT</a>
+            </div>
+        </section>
+
+
+        <section class="element">
+            <h2 id="product_listing">Product/Service Listing</h2>
+            <h4>CSS selector:</h4>
+            <p>.product-service</p>
+            <h4>Sample code:</h4>
+            <code>
+                &lt;img&gt;src="images/p1.jpg" alt="chocolate picture"&gt;<br>
+                &lt;p&gt;Camera box&lt;/p&gt;<br>
+                &lt;p&gt;cost:$1298.&lt;/p&gt;<br>
+                &lt;a href="product_detail.html"&gt;click here learn more &lt;/a&gt;
+            </code>
+            <h4>Rendered element:</h4>
+            <div class="product-service">
+                <a id="picone" href="">
+                    <img src="images/p1.jpg" alt="chocolate picture">
+                </a>
+                <P id="product_list1">Camera box.</P>
+                <p id="product_list2">cost:$1298.</p>
+                <a id="product_info" href="product.html">click here know more</a>
+                </p>
+        </section>
+
+        <section class="element">
+            <h2>Payment Form</h2>
+            <h4>CSS selector:</h4>
+            <p>.payment</p>
+            <h4>Sample code:</h4>
+            <code>
+                &lt;label&gt;Name：&lt;/label&gt;&lt;input type="text" name="name" value="" /&gt;&lt;br /&gt;
+            </code>
+            <h4 id="payment_render">Rendered element:</h4>
+            <p id="pay-form">payment form</p>
+            <div class="payment">
+                <label>Name：</label><input type="text" name="name" value="" /><br />
+                <label>Phone：</label><input type="text" name="name" value="" /><br />
+                <label>Address：</label><input type="text" name="name" value="" /><br />
+                <label>Number：</label><input type="text" name="name" value="" /><br />
+            </div>
+        </section>
+
+
+
+        <section class="element" id="checkout_cart">
+            <h2>Checkout Cart</h2>
+            <h4>CSS selector:</h4>
+            <p>.cartItem</p>
+            <h4>Sample code:</h4>
+            <code>
+                &lt;img src="images/p2.jpg" alt="chocolate box"&gt; <br>
+            </code>
+            <h4>Rendered element:</h4>
+            <div class="cart-item">
+                <img src="images/p2.jpg" alt="chocolate box">
+                <p>A200 Camera box $832</p>
+                <label>Quantity: </label>
+                <input type="text" name="number" class="quantity">
+            </div>
+        </section>
+
+        <section>
+            <section class="element">
+                <h2>basic branding ideds</h2>
+                <h3>What does the company do?</h3>
+                <!-- <p>Amber's Chocolate Company</p><br> -->
+                <p>
+                    Amber's chocolate company buys raw chocolate materials,
+                    processes them in factories and sells them to consumers in its own stores.
+                    Provide consumers with a variety of high-quality chocolates.
+                </p>
+                <h3>Who is the company to potential customers potential consumers?</h3>
+                <ol id="consumer">
+                    <li>Self-consumers aged from 15 to 30</li>
+                    <li>Parents who buy chocolate for their children</li>
+                    <li>
+                        Chocolate as a gift is a good choice for festivals and birthdays, so people who want to buy gifts are
+                        also potential consumers.
+                    </li>
+                </ol>
+                <h3>Why might this company entice someone to purchase or service?</h3>
+                <ol id="entice">
+                    <li>The company uses natural and high-quality raw materials to make chocolate.</li>
+                    <li>Using refining technology to make chocolate taste silky.</li>
+                    <li>Chocolate mixs with fruit, nuts and other elements to form a diversified product.</li>
+                    <li>Exquisite Packaging.</li>
+                </ol>
+            </section>
+
+            <section>
+                <section class="element">
+                    <h2>assemble brand componets</h2>
+                    <h3>Fonts</h3>
+                    <P id="fonts_type1">Monaco</P>
+                    <P id="fonts_type2">Sans-serif</P>
+                    <h3>color platte</h3>
+                    <img id="col" src="images/colors.jpg" alt="color platte" width="500" height="300"></a>
+                    <ol id="color_platte">
+                        <li>#7584AD</li>
+                        <li>#314570</li>
+                        <li>#AEDED6</li>
+                        <li>#E09873</li>
+                        <li>#A37F6F</li>
+                    </ol>
+                </section>
+            </section>
+
+
+
+            <section>
+                <h2> Citations</h2>
+                The camera picture is referenced from <a href="https://search.jd.com/Search?keyword=相机&enc=utf-8&wq=xiangji&pvid=6f78391a44864447addb2b677a52b2d6">URL</a>
+            </section>
+
+</body>
+</html>
