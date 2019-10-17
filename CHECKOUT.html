@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        
+        }
+
+        .header {
+            background-image: url(images/bg.png);
+            height: 200px;
+            width: 99.8%;
+            border: 1px solid #000000;
+            text-align: center;
+            background-size: 100%;
+            font-family: 'Mansalva'
+        }
+
+            .header p {
+                font-size: 50px;
+                color: white;
+            }
+
+            .header a {
+                margin-left: 5%;
+                font-size: 25px;
+                color: white;
+
+            }
+
+                .header a:hover {
+                    color: red;
+                }
+
+        .body {
+            min-height: 800px;
+            width: 99.8%;
+            border: 1px solid #000000;
+            text-align:center;
+        }
+
+        .footer {
+            height: 100px;
+            width: 99.8%;
+            border: 1px solid #000000;
+            text-align: center;
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            color: white;
+            clear: both;
+        }
+
+            .footer p {
+                font-size: 21px;
+                line-height: 30px;
+            }
+
+            .footer a {
+                color: white;
+            }
+
+        .box {
+            width: 20%;
+            min-height: 2px;
+            border: 1px solid #000000;
+            float: left;
+            margin: 2.2%;
+            text-align: center;
+        }
+
+        .active {
+            color: red !important;
+        }
+
+        img {
+            width: 100%;
+            visibility: hidden;
+        }
+
+        .boxDetail {
+            width: 900px;
+            height: 500px;
+            border: 1px solid #000000;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            color: orange;
+            font-family: 'Mansalva';
+            margin-top: 50px;
+        }
+        tr th, tr td {
+            width: 200px;
+            height: 50px;
+        }
+
+        table {
+            margin: 0 auto;
+            margin-top: 70px;
+            margin-bottom: 100px;
+            text-align:center;
+            font-family:'微软雅黑';
+        }
+        .label {
+            width:100px;
+            display:inline-block;
+            margin:7px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <p>Camera</p>
+        <br /> <br /> <br />
+        <a href="HOME.html">HOME</a>
+        <a href="PRODUCT.html">PRODUCT</a>
+       <a  class="active" href="CHECKOUT.html">CHECKOUT</a>
+        <a href="CONTACT.html">CONTACT</a>
+    </div>
+    <div class="body">
+        <h1 class="title">CheckOut</h1>
+        <table border="1" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ProductName</th>
+                    <th>Price</th>
+                    <th>Number</th>
+                    <th>TotalPrice</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Style1</td>
+                    <td>$55</td>
+                    <td>2</td>
+                    <td>$110</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Style3</td>
+                    <td>$65</td>
+                    <td>2</td>
+                    <td>$130</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Style5</td>
+                    <td>$25</td>
+                    <td>6</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Style6</td>
+                    <td>$35</td>
+                    <td>2</td>
+                    <td>$70</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Style7</td>
+                    <td>$59</td>
+                    <td>2</td>
+                    <td>$118</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 id="payment_render">Rendered element:</h4>
+        <p id="pay-form">payment form</p>
+        <div class="payment">
+            <label class="label">Name：</label><input type="text" name="name" value="" /><br />
+            <label class="label">Phone：</label><input type="text" name="name" value="" /><br />
+            <label class="label">Address：</label><input type="text" name="name" value="" /><br />
+            <label class="label">Number：</label><input type="text" name="name" value="" /><br />
+        </div>
+        <input type="button" class="btn" value="CheckOut" />
+    </div>
+
+
+    <div class="footer">
+
+        <p>IAT 339 Shuhan Liu 301297750</p>
+        <p> IAT 339 Yi Hao 301276656</p>
+        <p><a href="#"> STYLEGUIDE CITATIONS GITHUB</a></p>
+
+    </div>
+</body>
+</html>
