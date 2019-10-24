@@ -1,0 +1,65 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            text-underline: none;
+        }
+
+        .title {
+            font-family: 'Mansalva';
+            margin-top: 30px;
+            color: orange;
+        }
+
+        .footer p{
+
+        }
+        .header {
+            font-family: 'Mansalva';
+            background-image: url(../images/bg.jpg);
+            height: 200px;
+            width: 99.8%;
+            border: 1px solid #000000;
+            text-align: center;
+            background-size: 100%;
+        }
+
+            .header p {
+                font-size: 50px;
+                color: white;
+            }
+
+            .header a {
+                margin-left: 5%;
+                font-size: 25px;
+                color: white;
+                padding-top: 20px;
+                text-decoration: none;
+            }
+
+                .header a:hover {
+                    color: #E2D7C3;
+                }
+
+        .footer {
+            height: 100px;
+            background-image: url(../images/bg.jpg);
+            background-size: 100%;
+            color: white;
+            clear: both;
+            padding:15px auto;
+        }
+
+            .footer p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .footer a {
+                color: white;
+            }
+
+        .active {
+            color: #E2D7C3 !important;
+        }

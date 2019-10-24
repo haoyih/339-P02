@@ -9,10 +9,11 @@
         * {
             margin: 0;
             padding: 0;
+
         }
 
         .header {
-            background-image: url(images/bg.png);
+            background-image: url(images/bg.jpg);
             height: 200px;
             width: 99.8%;
             border: 1px solid #000000;
@@ -21,26 +22,27 @@
             font-family: 'Mansalva'
         }
 
-            .header p {
-                font-size: 50px;
-                color: white;
-            }
+        .header p {
+            font-size: 50px;
+            color: white;
+        }
 
-            .header a {
-                margin-left: 5%;
-                font-size: 25px;
-                color: white;
-            }
+        .header a {
+            margin-left: 5%;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
 
-                .header a:hover {
-                    color: red;
-                }
+        .header a:hover {
+            color: #E2D7C3;
+        }
 
         .body {
             min-height: 800px;
             width: 99.8%;
             border: 1px solid #000000;
-            text-align: center;
+            text-align:center;
         }
 
         .footer {
@@ -48,120 +50,216 @@
             width: 99.8%;
             border: 1px solid #000000;
             text-align: center;
-            background-image: url(images/bg.png);
+            background-image: url(images/bg.jpg);
             background-size: 100%;
             color: white;
             clear: both;
         }
 
-            .footer p {
-                font-size: 21px;
-                line-height: 30px;
-            }
+        .footer p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'Mansalva';!important;
+        }
 
-            .footer a {
-                color: white;
-            }
-
-        .box {
-            width: 20%;
-            min-height: 2px;
-            border: 1px solid #000000;
-            float: left;
-            margin: 2.2%;
-            text-align: center;
+        .footer a {
+            color: white;
         }
 
         .active {
-            color: red !important;
+            color: #E2D7C3 !important;
         }
 
-        img {
-            width: 100%;
-            visibility: hidden;
-        }
-
-        .boxDetail {
-            width: 900px;
-            height: 500px;
-            border: 1px solid #000000;
-            margin: 0 auto;
-            margin-bottom: 10px;
-        }
 
         .title {
             color: orange;
-            margin-top: 30px;
-            font-family: 'Mansalva'
+            font-family: 'Mansalva';
+            margin : 30px auto;
         }
 
-        .left {
-            width: 60%;
-            height: 100%;
-            float: left;
-            border: 1px solid #000000;
-            background-image: url(images/contact.jpg);
-            background-size: 100%;
+
+        input,select,button,textarea{
+          font-weight: 700;
+          color:white;
+            width: 90%;
+            display: block;
+            height: 40px;
+            text-align: center;
+            margin:15px auto 0;
+        }
+        textarea{
+          color:grey;
+          border-color: lightgrey;
+            height: 100px;
+            text-align: left;
+            text-indent: 50px;
+        }
+        .right-div{
+            width: 40%;
+            padding:15px;
+            position: relative;
+        }
+        .right-div img{
+            position: absolute;
+            display: block;
+            width:90%;
+            top:25%;
+            left:0;
+            right: 0;
+            margin:auto auto;
+        }
+        button{
+            width:45%;
+            margin-top:35px;
+            background-color:orange;
+        }
+        button:hover{
+            width:90%;
+            transition:all 1s;
+        }
+        /*手机端*/
+        @media screen and  (max-width: 767px) {
+
+            .header a {
+                display:inline-block;
+                font-size: 18px;
+                padding-top:20px;
+            }
+            .payment{
+                width:60%;
+                height:70%;
+                position: absolute;
+                left:0;
+                right:0;
+                top:40%;
+                bottom:0;
+                margin:auto auto;
+                box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
+            }
+            .left-div{
+                width: 100%;
+            }
+            .right-div{
+                width: 100%;
+                padding:15px;
+                position: relative;
+            }
+            .right-div img {
+                display: none;
+            }
+            .body {
+                min-height: 600px;
+                width: 99.8%;
+                border: 1px solid #000000;
+                text-align:center;
+            }
         }
 
-        .right {
-            width: 39%;
-            height: 100%;
-            float: left;
+        /*平板电脑*/
+        @media screen and (min-width: 768px) and (max-width: 979px) {
+            .header a {
+                display:inline-block;
+                padding-top:20px;
+                font-size: 18px;
+            }
+            .payment{
+                width:60%;
+                height:70%;
+                position: absolute;
+                left:0;
+                right:0;
+                top:45%;
+                bottom:0;
+                margin:auto auto;
+                box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
+            }
+            .left-div{
+                width: 100%;
+            }
+            .right-div{
+                width: 100%;
+                padding:15px;
+                position: relative;
+            }
+            .right-div img {
+                display: none;
+            }
+            .body {
+                min-height: 600px;
+                width: 99.8%;
+                border: 1px solid #000000;
+                text-align:center;
+                padding:30px auto;
+            }
+        }
+        @media screen and (min-width: 979px) {
+            .body {
+                min-height: 660px;
+                width: 99.8%;
+                border: 1px solid #000000;
+                text-align:center;
+            }
+            .payment{
+                width:60%;
+                height:65%;
+                position: absolute;
+                left:0;
+                right:0;
+                top:40%;
+                bottom:0;
+                margin:auto auto;
+                display: flex;
+                box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
+            }
+
+            .left-div{
+                width: 60%;
+            }
+            .right-div{
+                width: 40%;
+                padding:15px;
+            }
         }
 
-        .label {
-            display: inline-block;
-            width: 100px;
-            margin: 12px;
-        }
-
-        .textArea {
-            margin-top: 12px;
-
-        }
-        .textArea:focus {
-            outline: none !important;
-            border-color: #719ECE;
-            box-shadow: 0 0 10px #719ECE;
-        }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <p>Camera</p>
-        <br /> <br /> <br />
-        <a href="HOME.html">HOME</a>
-        <a href="PRODUCT.html">PRODUCT</a>
-        <a href="CHECKOUT.html">CHECKOUT</a>
-        <a class="active" href="CONTACT.html">CONTACT</a>
-    </div>
-    <div class="body">
-        <div class="left">
-            <img width="100%" src="images/contact.jpg" alt="Alternate Text" />
+<div class="header">
+  <br /> <br /> <br />
+  <p>Serin's Camera Shop</p>
+  <br /><br />
+    <a href="HOME.html">HOME</a>
+    <a href="PRODUCT.html">PRODUCT</a>
+    <a href="CHECKOUT.html">CHECKOUT</a>
+    <a  class="active" a href="CONTACT.html">CONTACT</a>
+</div>
+<div class="body">
+
+
+
+    <div class="payment">
+        <div class="right-div" >
+            <img src="images/bg.jpg" alt="">
         </div>
-
-        <div class="right">
-            <h2 class="title">Contact Form</h2>
-            <form action="/" method="post">
-                <label class="label">Name:</label><input type="text" name="name" value="" /><br />
-                <label class="label">Email:</label><input type="text" name="name" value="" /><br />
-                <label class="label">Message:</label><textarea rows="6" class="textArea"></textarea><br />
-                <input type="button" name="name" value="Submit" />
-            </form>
-
-
+        <div class="left-div">
+            <h1 class="title">Contact Us</h1>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Phone number">
+            <input type="text" placeholder="Address">
+            <textarea></textarea>
+            <button>Contact Us</button>
         </div>
     </div>
 
+</div>
 
-    <div class="footer">
+<div class="footer">
 
-        <p>IAT 339 Shuhan Liu 301297750</p>
-        <p> IAT 339 Yi Hao 301276656</p>
-        <p><a href="#"> STYLEGUIDE CITATIONS GITHUB</a></p>
+    <p>IAT 339 Shuhan Liu 301297750</p>
+    <p> IAT 339 Yi Hao 301276656</p>
+    <p><a href="#"> STYLEGUIDE CITATIONS GITHUB</a></p>
 
-    </div>
+</div>
 </body>
 </html>

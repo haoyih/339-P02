@@ -9,11 +9,11 @@
         * {
             margin: 0;
             padding: 0;
-        
+
         }
 
         .header {
-            background-image: url(images/bg.png);
+            background-image: url(images/bg.jpg);
             height: 200px;
             width: 99.8%;
             border: 1px solid #000000;
@@ -29,13 +29,14 @@
 
             .header a {
                 margin-left: 5%;
-                font-size: 25px;
+                font-size: 20px;
+                text-decoration: none;
                 color: white;
 
             }
 
                 .header a:hover {
-                    color: red;
+                    color: #E2D7C3;
                 }
 
         .body {
@@ -50,140 +51,221 @@
             width: 99.8%;
             border: 1px solid #000000;
             text-align: center;
-            background-image: url(images/bg.png);
+            background-image: url(images/bg.jpg);
             background-size: 100%;
             color: white;
             clear: both;
         }
 
             .footer p {
-                font-size: 21px;
+                font-size: 18px;
                 line-height: 30px;
+                font-family: 'Mansalva';!important;
             }
 
             .footer a {
                 color: white;
             }
 
-        .box {
-            width: 20%;
-            min-height: 2px;
-            border: 1px solid #000000;
-            float: left;
-            margin: 2.2%;
-            text-align: center;
-        }
-
         .active {
-            color: red !important;
+            color: #E2D7C3 !important;
         }
 
-        img {
-            width: 100%;
-            visibility: hidden;
-        }
-
-        .boxDetail {
-            width: 900px;
-            height: 500px;
-            border: 1px solid #000000;
-            margin: 0 auto;
-            margin-bottom: 10px;
-        }
 
         .title {
             color: orange;
             font-family: 'Mansalva';
-            margin-top: 50px;
-        }
-        tr th, tr td {
-            width: 200px;
-            height: 50px;
+            margin : 30px auto;
         }
 
-        table {
-            margin: 0 auto;
-            margin-top: 70px;
-            margin-bottom: 100px;
-            text-align:center;
-            font-family:'微软雅黑';
+        input,select,button{
+
+          font-weight: 700;
+          color: grey;
+            width: 90%;
+            display: block;
+            height: 40px;
+            text-align: center;
+            margin:15px auto 0;
         }
-        .label {
-            width:100px;
-            display:inline-block;
-            margin:7px;
+        .right-div{
+            width: 40%;
+            padding:15px;
+            position: relative;
         }
+        .right-div img{
+           position: absolute;
+            display: block;
+            width:100%;
+            top:25%;
+            left:0;
+            right: 0;
+            margin:auto auto;
+        }
+
+        button{
+          font-weight: 700;
+          color:white;
+            width:45%;
+            margin-top:35px;
+            background-color:orange;
+        }
+        button:hover{
+            width:90%;
+            transition:all 1s;
+        }
+        /*手机端*/
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+
+            .header a {
+                display:inline-block;
+                font-size: 18px;
+                padding-top:20px;
+            }
+            .payment{
+                width:60%;
+                height:65%;
+                position: absolute;
+                left:0;
+                right:0;
+                top:45%;
+                bottom:0;
+                margin:auto auto;
+                box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
+            }
+            .left-div{
+                width: 100%;
+            }
+            .right-div{
+                width: 100%;
+                padding:15px;
+                position: relative;
+            }
+            .right-div img {
+                display: none;
+            }
+            .body {
+                min-height: 600px;
+                width: 99.8%;
+                border: 1px solid #000000;
+                text-align:center;
+            }
+        }
+
+        /*平板电脑*/
+        @media screen and (min-width: 768px) and (max-width: 979px) {
+            .header a {
+                display:inline-block;
+                padding-top:20px;
+                font-size: 18px;
+            }
+            .payment{
+                width:60%;
+                height:65%;
+                position: absolute;
+                left:0;
+                right:0;
+                top:38%;
+                bottom:0;
+                margin:auto auto;
+                box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
+            }
+            .left-div{
+                width: 100%;
+            }
+            .right-div{
+                width: 100%;
+                padding:15px;
+                position: relative;
+            }
+            .right-div img {
+                display: none;
+            }
+            .body {
+                min-height: 600px;
+                width: 99.8%;
+                border: 1px solid #000000;
+                text-align:center;
+            }
+        }
+        @media screen and (min-width: 979px) {
+            .body {
+                min-height: 660px;
+                width: 99.8%;
+                border: 1px solid #000000;
+                text-align:center;
+            }
+            .payment{
+                width:60%;
+                height:65%;
+                position: absolute;
+                left:0;
+                right:0;
+                top:40%;
+                bottom:0;
+                margin:auto auto;
+                display: flex;
+                box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
+            }
+
+            .left-div{
+                width: 60%;
+            }
+            .right-div{
+                width: 40%;
+                padding:15px;
+                text-align: center;
+                position: relative;
+            }
+        }
+
     </style>
 </head>
 <body>
 
     <div class="header">
-        <p>Camera</p>
-        <br /> <br /> <br />
+      <br /> <br /> <br />
+      <p>Serin's Camera Shop</p>
+      <br /><br />
         <a href="HOME.html">HOME</a>
         <a href="PRODUCT.html">PRODUCT</a>
        <a  class="active" href="CHECKOUT.html">CHECKOUT</a>
         <a href="CONTACT.html">CONTACT</a>
     </div>
     <div class="body">
-        <h1 class="title">CheckOut</h1>
-        <table border="1" cellspacing="0" cellpadding="0">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>ProductName</th>
-                    <th>Price</th>
-                    <th>Number</th>
-                    <th>TotalPrice</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Style1</td>
-                    <td>$55</td>
-                    <td>2</td>
-                    <td>$110</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Style3</td>
-                    <td>$65</td>
-                    <td>2</td>
-                    <td>$130</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Style5</td>
-                    <td>$25</td>
-                    <td>6</td>
-                    <td>$150</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Style6</td>
-                    <td>$35</td>
-                    <td>2</td>
-                    <td>$70</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Style7</td>
-                    <td>$59</td>
-                    <td>2</td>
-                    <td>$118</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 id="payment_render">Rendered element:</h4>
-        <p id="pay-form">payment form</p>
+
+
+
         <div class="payment">
-            <label class="label">Name：</label><input type="text" name="name" value="" /><br />
-            <label class="label">Phone：</label><input type="text" name="name" value="" /><br />
-            <label class="label">Address：</label><input type="text" name="name" value="" /><br />
-            <label class="label">Number：</label><input type="text" name="name" value="" /><br />
+           <div class="left-div">
+               <h1 class="title">CheckOut</h1>
+               <input type="text" placeholder="Name">
+               <input type="text" placeholder="Phone number">
+               <input type="text" placeholder="Address">
+               <select name="" id="" >
+                   <option value="select your buy number">How many items</option>
+                   <option >1</option>
+                   <option >2</option>
+                   <option >3</option>
+               </select>
+               <select name=""  >
+                   <option value="select your buy number">Choose your Payment method</option>
+                   <option >Visa</option>
+                   <option >Master</option>
+                   <option >Paypal</option>
+               </select>
+               <button id="btn">Checkout</button>
+               <script>
+                   let btn = document.getElementById("btn");
+                   btn.onclick = function () {
+                       alert("You are all set!");
+                   }
+               </script>
+           </div>
+           <div class="right-div">
+               <img src="images/p2.jpg" alt="">
+           </div>
         </div>
-        <input type="button" class="btn" value="CheckOut" />
     </div>
 
 
