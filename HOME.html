@@ -5,145 +5,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        body{
+            font-family: "Open Sans',sans-seri";
         }
-        .title {
-            font-family: 'Mansalva';
-            margin-top:30px;
+        .footer p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'Mansalva';!important;
         }
-        .header {
-            font-family: 'Mansalva';
-            background-image: url(images/bg.png);
-            height: 200px;
-            width: 99.8%;
-            border: 1px solid #000000;
-            text-align: center;
-            background-size: 100%;
+        .card{
+            width:100%;
+            text-align: left;
+            box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
+        }
+        .footer p {
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'Mansalva';!important;
+        }
+        .card:hover{
+            transition: all 0.5s;
+            box-shadow: none;
         }
 
-            .header p {
-                font-size: 50px;
-                color: white;
-            }
+        .left-p{
+            text-align:left;
+            margin-bottom: 15px;
+            text-indent: 50px;
+        }
+        label{
+            display: inline-block;
+            margin-left:50px;
 
+        }
+        input{
+            background-color:lightgreen;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        button{
+            width:60%;
+            font-weight: 700;
+            height:40px;
+            display: block;
+            margin-left:50px;
+            background-color:orange;
+            color:white;
+            text-align:center;
+            padding:10px auto;
+            margin-bottom: 15px;
+            border:none;
+            line-height: 0px;
+        }
+        /*手机端*/
+        @media (min-width: 480px) and (max-width: 767px) {
             .header a {
-                margin-left: 5%;
-                font-size: 25px;
-                color: white;
+                display:inline-block;
+                font-size: 18px;
+                padding-top:20px;
+            }
+            .aboutus {
+                width: 90%;
+                margin: 0 auto;
+            }
+            button{
+                width:60%;
+                font-weight: 700;
+                height:40px;
+                display: block;
+                background-color:orange;
+                color:white;
+                text-align:center;
+                padding:10px auto;
+                margin:0 auto 15px;
+                border:none;
+                line-height: 0px;
+            }
+            .left-p{
+                text-align:center;
+                margin-bottom: 15px;
+                text-indent: 50px;
+            }
+            .box-img{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 30px;
+            }
+            .box {
+                width: 100%;
+                padding:20px;
+                height: 500px;
+                /*border: 1px solid #000000;*/
+                text-align: center;
+                cursor:pointer;
+            }
+            .card{
+                width:100%;
+                text-align: center;
+                box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
             }
 
-                .header a:hover {
-                    color: red;
-                }
 
-        .body {
-            min-height: 800px;
-            width: 99.8%;
-            border: 1px solid #000000;
-            text-align: center;
         }
+        A {text-decoration: none;}
 
-        .footer {
-            height: 100px;
-            width: 99.8%;
-            border: 1px solid #000000;
-            text-align: center;
-            background-image: url(images/bg.png);
-            background-size: 100%;
-            color: white;
-            clear: both;
-        }
-
-            .footer p {
-                font-size: 21px;
-                line-height: 30px;
+        /*平板电脑*/
+        @media (min-width: 768px) and (max-width: 979px) {
+            .header a {
+                display:inline-block;
+                padding-top:20px;
+                font-size: 19px;
             }
-
-            .footer a {
-                color: white;
+            .aboutus {
+                width: 70%;
+                margin: 0 auto;
             }
-
-        .box {
-            width: 20%;
-            min-height: 2px;
-            /*border: 1px solid #000000;*/
-            float: left;
-            margin: 2.2%;
-            text-align: center;
+            button{
+                width:60%;
+                font-weight: 700;
+                height:40px;
+                display: block;
+                background-color:orange;
+                color:white;
+                text-align:center;
+                padding:10px auto;
+                margin:0 auto 15px;
+                border:none;
+                line-height: 0px;
+            }
+            .left-p{
+                text-align:center;
+                margin-bottom: 15px;
+                text-indent: 50px;
+            }
+            .box-img{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 30px;
+            }
+            .box {
+                width: 100%;
+                padding:20px;
+                height: 460px;
+                /*border: 1px solid #000000;*/
+                text-align: center;
+                cursor:pointer;
+            }
+            .card{
+                width:100%;
+                text-align: center;
+                box-shadow: 3px 3px 30px lightgray,-3px -3px 30px lightgray;
+            }
+        }
+        /*电脑端*/
+        @media screen and (min-width: 979px){
+            .header a {
+                display:inline-block;
+                padding-top:20px;
+                font-size: 19px;
+            }
+            .aboutus {
+                width: 50%;
+                margin: 0 auto;
+            }
+            .box-img{
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                padding: 30px;
+                margin-bottom: 0px;
+            }
+            .box {
+                width: 30%;
+                padding:20px;
+                height: 500px;
+                /*border: 1px solid #000000;*/
+                text-align: center;
+                margin-top:.5%;
+                cursor:pointer;
+            }
+        }
+        .title{
+            margin-bottom:30px;
         }
 
-        .active {
-            color: red !important;
+        .main-img img{
+            width:100%;
+            height:100%;
         }
-
-        img {
-            width: 100%;
-            visibility: hidden;
-        }
-
-        .boxDetail {
-            width: 900px;
-            height: 500px;
-            /*border: 1px solid #000000;*/
-            margin: 0 auto;
-            margin-bottom: 10px;
-        }
-
-        .title {
-            color: orange;
-        }
-        .aboutus {
-        width:700px;
-        margin:0 auto;
+        /*后期效果要用*/
+        .border-style{
+            box-shadow: 3px 3px 30px lightgrey,-3px -3px 30px lightgray;
+            padding:25px;
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <p>Camera</p>
         <br /> <br /> <br />
+        <p>Serin's Camera Shop</p>
+        <br />
         <a href="HOME.html" class="active">HOME</a>
-        <a href="PRODUCT.html">PRODUCT</a>
+        <a href="PRODUCT.html" >PRODUCT</a>
         <a href="CHECKOUT.html">CHECKOUT</a>
         <a href="CONTACT.html">CONTACT</a>
     </div>
     <div class="body">
-        <h1 class="title">About Us</h1>
-        <p class="aboutus">
-            Our company provide the customer with high quality Sony cameras, there are many kind of cameras for all ages of people.
-            For example, for teenages, for adults, or for professional photographers. You can always find your dream camer here on our website.
-        </p>
-        <div class="box">
-            <img src="images/p1.jpg" alt="Alternate Text" />
-        </div>
-        <div class="box">
-            <img src="images/p2.jpg" alt="Alternate Text" />
-        </div>
-        <div class="box">
-            <img src="images/p3.jpg" alt="Alternate Text" />
-        </div>
-        <div class="box">
-            <img src="images/p4.jpg" alt="Alternate Text" />
-        </div>
-        <div class="box">
-            <img src="images/p5.jpg" alt="Alternate Text" />
-        </div>
-        <div class="box">
-            <img src="images/p6.jpg" alt="Alternate Text" />
-        </div>
-        <div class="box">
-            <img src="images/p7.jpg" alt="Alternate Text" />
-        </div>
-        <div class="box">
-            <img src="images/p8.jpg" alt="Alternate Text" />
-        </div>
-        <div class="boxDetails">
+       <div class="border-style">
+           <h1 class="title">About Us</h1>
+           <p class="aboutus">
+               Our company provide the customer with high quality Sony cameras, there are many kind of cameras for all ages of people.
+               For example, for teenages, for adults, or for professional photographers. You can always find your dream camer here on our website.
+           </p><br><br>
+       </div>
+
+        <div class="boxDetails border-style">
             <h1 class="title">New Product</h1>
-            <div class="boxDetail"></div>
+            <div class="box-img">
+                <div class="box">
+                    <div class="card">
+                        <div class="img-div"><a href="home1.html"><img  src="images/p8.jpg"  alt="Alternate Text" /></a></div>
+                        <p class="left-p">NIKONZ 6 MIRRORLESS BODY</p>
+                        <p class="left-p">$2,299,99</p>
+                        <label><input type="checkbox" checked="checked">&nbsp;&nbsp;&nbsp;In stock online</label>
+                        <div class="btn-group">
+                            <a href="CHECKOUT.html"> <button>Add to Cart</button> </a>
+                             <button>Reserve & Pick up</button>
+                        </div>
+                      <br>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="img-div"><a href="home2.html"><img  src="images/p2.jpg"  alt="Alternate Text" /></a></div>
+                        <p class="left-p">NIKONZ 6 MIRRORLESS BODY</p>
+                        <p class="left-p">$2,299,99</p>
+                        <label><input type="checkbox" checked="checked">&nbsp;&nbsp;&nbsp;In stock online</label>
+                        <div class="btn-group">
+                            <a href="CHECKOUT.html"> <button>Add to Cart</button> </a>
+                             <button>Reserve & Pick up</button>
+                        </div>
+                      <br>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <div class="img-div"><a href="home3.html"><img src="images/p7.jpg" alt="Alternate Text" /></a></div>
+                        <p class="left-p">NIKONZ 6 MIRRORLESS BODY</p>
+                        <p class="left-p">$2,299,99</p>
+                        <label><input type="checkbox" checked="checked">&nbsp;&nbsp;&nbsp;In stock online</label>
+                        <div class="btn-group">
+                              <a href="CHECKOUT.html"> <button>Add to Cart</button> </a>
+                               <button>Reserve & Pick up</button>
+                        </div>
+                        <br>
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
