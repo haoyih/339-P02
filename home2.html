@@ -31,13 +31,17 @@
             margin-left:50px;
 
         }
+        .boxDetail{
+            padding:30px;
+
+        }
         input{
             background-color:lightgreen;
             display: inline-block;
             margin-bottom: 15px;
         }
         .boxDetail:hover{
-            box-shadow: none;
+            box-shadow: 3px 3px 30px lightgrey,-3px -3px 30px lightgray;
             transition: 1s;
         }
         .footer p {
@@ -72,7 +76,7 @@
             }
             .boxDetail {
                 width: 90%;
-                box-shadow: 3px 3px 30px lightgrey,-3px -3px 30px lightgray;
+
                 margin: 0 auto;
                 margin-bottom: 10px;
                 padding:15px;
@@ -91,7 +95,7 @@
             }
             .boxDetail {
                 width: 70%;
-                box-shadow: 3px 3px 30px lightgrey,-3px -3px 30px lightgray;
+
                 margin: 0 auto;
                 margin-bottom: 10px;
                 padding:15px;
@@ -106,7 +110,7 @@
             }
             .boxDetail {
                 width: 50%;
-                box-shadow: 3px 3px 30px lightgrey,-3px -3px 30px lightgray;
+
                 margin: 0 auto;
                 margin-bottom: 10px;
                 padding:15px;
@@ -118,20 +122,10 @@
             margin-bottom:30px;
         }
 
-        .main-p{
-            text-align:center;
-            text-indent: 20px;
-
-        }
         .main-img img{
             width:100%;
             height:100%;
         }
-        /*后期效果要用*/
-        /*.border-style{*/
-        /*    margin-top:40px;*/
-        /*    box-shadow: 3px 3px 40px lightgray,-3px -3px 40px lightgray;*/
-        /*}*/
     </style>
 </head>
 <body>
@@ -184,4 +178,11 @@
 
 </div>
 </body>
+<script>
+    let home = document.querySelector(".header p");
+    home.onclick = function () {
+        window.location.href = 'Home.html'
+
+    }
+</script>
 </html>
